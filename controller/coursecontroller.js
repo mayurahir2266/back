@@ -3,7 +3,7 @@ var coursecontent = require('../model/contentmodel')
 
 exports.add_course = async (req, res) => {
 
-     var data = await course.create(req.body)
+     var data = await course.create (req.body)
 
      res.status(200).json({
           status:'succesfully added',
@@ -46,6 +46,7 @@ exports.update_course = async (req, res) => {
      
      res.status(200).json({
           status:'succesfully updated',
+          data
 
      })
 }

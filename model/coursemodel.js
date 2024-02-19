@@ -5,8 +5,8 @@ var courseSchema = new mongoose.Schema({
         c_name:{
             type: String
         },
-        content_id:{
-            type: mongoose.Schema.Types.ObjectId,
+        course_fee:{
+            type: String,
             ref: "content"
         }
 
